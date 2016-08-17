@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+       function check() {
+           if(myform.Username4.value==""){
+               alert("请输入用户名！");
+               myform.Username4.focus();
+               return;
+           }else if(myform.pwd1.value==""){
+               alert("请输入密码！");
+               myform.pwd1.focus();
+               return;
+           }else if(myform.pwd1.value!=myform.pwd2.value){
+               alert("两次密码不一样,请重新输入");
+               myform.pw1.focus();
+               return;
+           }
+       }
+
+
+       var now=new Date();
+       var day=now.getDay();
+       var week;
+       switch (day){
+           case 2:
+               week="tuesday";
+               break;
+           case 1:
+               week="monday";
+               break;
+        }
+        document.write("今天是"+week);
+    </script>
+</head>
+<body>
+<form name="myform" action="" method="post" >
+    用户名:<input name="usename" type="text" id="Username4" maxlength="20"><br>
+    密码:<input name="pwd1" type="password" id="PWD14" size="20" maxlength="20"><br>
+    确认密码：<input name="pwd2" type="password" id="PWD25" size="25" maxlength="20"><br>
+    性别：<input name="sex" type="radio" class="noborder" value="man" checked>
+    man&nbsp;
+    <input name="sex" type="radio" class="noborder" value="women" >
+    women<br>
+    爱好:<input name="like" type="checkbox" id="like" value="体育">体育
+    <input name="like" type="checkbox" id="like1" value="旅游">旅游
+    <input name="like" type="checkbox" id="like2" value="音乐">音乐
+    <input name="like" type="checkbox" id="like3" value="看书">看书
+
+    <br>E-mail:<input name="emain" type="text" id="PWD224" size="50">
+    <br><input name="Submit" type="submit" class="btn_grey" value="确定保存" onclick="check()">
+    <input name="Reset" type="reset" class="btn_grey" id="Reset" value="重新填写">
+
+
+    <br>
+    不可多选
+    <select name="select" size="4">
+        <option>数码相机区</option>
+        <option>摄影器材</option>
+        <option>MP3</option>
+        <option>U盘</option>
+    </select>
+
+    可多选
+    <select name="select" size="3" multiple`    >
+        <option>数码相机区</option>
+        <option>摄影器材</option>
+        <option>MP3</option>
+        <option>U盘</option>
+    </select>
+</form><br>
+
+<textarea name="content" cols="30" rows="5" wrap="hard"></textarea>
+</body>
+</html>

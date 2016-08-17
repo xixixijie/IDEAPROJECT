@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function setObjects() {
+            document.getElementById("personData").elements[0].onblur=testValue();
+        }
+        function testValue() {alert("Hi"+this.value);
+
+        }
+    </script>
+</head>
+<body onload="setObjects">
+<form id="personData" action="">
+    <p>
+        First Name:<input type="text" name="firstName"/><br/><br/>
+        Second Name:<input type="text" name="secondName"/><br/><br/>
+        Submit:<input type="submit" >
+    </p>
+</form>
+</body>
+</html>

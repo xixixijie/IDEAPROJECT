@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function checkColor(element,index,array) {
+            return (element>=0&&element<256);
+        }
+
+        function checkCount(element,index,array){
+            return (element.length==3);
+        }
+
+        function testingCallbacks() {
+            var colors= new Array();
+            colors[0]=[0,262,255];
+            colors[1]=[-9,262,255];
+            colors[2]=[0,0,255];
+
+           // var testedColors=colors.filter(checkColor);
+            var testedColos=new Array();
+            for(var i in colors){
+                testedColos[i]=colors[i].filter(checkColor);
+            }
+
+            for(i in testedColos){
+                document.writeln(testedColos[i]+"<br/>");
+            }
+
+            var newColor=testedColos.filter(checkCount);
+
+            for(i in newColor){
+                document.write(newColor+"<br/>");
+            }
+
+
+        }
+    </script>
+</head>
+<body onload="testingCallbacks()">
+
+</body>
+</html>

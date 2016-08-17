@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload=setupEvents;
+
+        function setupEvents() {
+            document.getElementById("first").onmousedown=function (evnt) {
+                var theEvent=evnt?evnt:window.event;
+                alert(this);
+                alert("first element");
+                stopEvent(theEvent);
+            }
+
+            document.getElementById("second").onmousedown=function () {
+                alert("second element");
+
+            }
+
+            document.onmousedown=function () {
+                alert("docunment");
+
+            }
+
+        }
+
+        function stopEvent(evnt) {
+            if(evnt.stopPropagation){
+                evnt.stopPropagation()
+            }else{
+                evnt.cancelBubble=true;
+            }
+
+        }
+    </script>
+</head>
+<body>
+<div id="first" style="padding: 10px;background-color: #f00;width: 150px;height: 100px;z-index:
+1000">
+    <div id="second" style="background-color: #f0f;width: 100px;height: 100px;border:1px dashed
+    #000;z-index: 300"></div>
+
+</div>
+</body>
+</html>

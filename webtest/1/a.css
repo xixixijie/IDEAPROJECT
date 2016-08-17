@@ -1,0 +1,15 @@
+body{
+    background: #eef;
+    color: #909;
+    font:100% "Palatino Linotype",Palatino,
+    serif;
+    text-align: center;
+}
+
+h2{
+    font-size:1.37;
+    letter-spacing: 1.2;
+}
+a{
+    white-space: pre;
+}
