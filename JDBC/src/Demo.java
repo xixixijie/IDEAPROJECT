@@ -8,9 +8,9 @@ public class Demo {
         Class.forName("com.mysql.jdbc.Driver");
         String url="jdbc:mysql://localhost:3306/test?useSSL=true";
 
-        Connection con=DriverManager.getConnection(url,"root","0000");
+        Connection con=DriverManager.getConnection(url,"root","00000000");
 
-      Statement sta=con.createStatement();
+
 
 
      /*   ResultSet resule=sta.executeQuery("select name,age from employee");

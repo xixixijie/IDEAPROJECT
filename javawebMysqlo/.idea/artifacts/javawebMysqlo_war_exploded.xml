@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="javawebMysqlo:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/javawebMysqlo_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="javawebMysqlo/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="javawebMysqlo" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
