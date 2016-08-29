@@ -12,23 +12,38 @@
     <title>$Title$</title>
   </head>
   <body>
-  <%
-    try{
-      Class.forName("com.mysql.jdbc.Driver");
-      String url="jdbc:mysql://localhost:3306/test";
-      String username="root";
-      String password="00000000";
-      Connection conn= DriverManager.getConnection(url,username,password);
-      if(conn!=null){
-        out.println("数据库连接成功");
-        System.out.println("连接成功");
-        conn.close();
-      }else {
-        out.println("连接失败");
-      }
-    }catch (Exception e){
-      e.printStackTrace();
-    }
-  %>
+  <!--  添加图书表格
+    <form action="AddBook.jsp" method="post" >
+      <table align="center" width="450">
+        <tr>
+          <td align="center" colspan="2"><h2>添加图书信息<hr></h2></td>
+        </tr>
+        <tr>
+          <td align="right">图书名称:</td>
+          <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+          <td align="right">价    格:</td>
+          <td><input type="text" name="price"></td>
+        </tr>
+        <tr>
+          <td align="right">数    量:</td>
+          <td><input type="text" name="bookCount"></td>
+        </tr>
+        <tr>
+          <td align="right">作    者:</td>
+          <td><input type="text" name="author"></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <input type="submit" value="添  加">
+          </td>
+        </tr>
+
+      </table>
+    </form>
+-->
+  <a href="FindServlet">查看所有图书</a>
+
   </body>
 </html>
