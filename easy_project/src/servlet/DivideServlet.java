@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -22,8 +23,25 @@ public class DivideServlet extends HttpServlet {
         if(request.getParameter("page")!=null){
             currPage=Integer.parseInt(request.getParameter("page"));
         }
+        String proname=request.getParameter("proname");
+        String[] ids =request.getParameterValues("ids");
 
-        List<Product> list= ProDao.find(currPage);
+
+
+        List<Product> list=new LinkedList<>();
+
+        if((proname==null||"".equals(proname))&&ids==null) {
+            list = ProDao.find(currPage);
+        }else if(ids!=null){
+            int[] proid=new int[100] ;
+            for (int i = 0; i < ids.length; i++) {
+                proid[i]=Integer.valueOf(ids[i]);
+            }
+            ProDao.delPro(proid);
+            list=ProDao.find(currPage);
+        }else{
+            list=ProDao.searchPro(proname);
+        }
         request.setAttribute("currPage",currPage);
         request.setAttribute("list",list);
         int maxpage=0;

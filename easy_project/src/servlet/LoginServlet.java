@@ -26,10 +26,13 @@ public class LoginServlet extends HttpServlet {
         String username=request.getParameter("username");
         String pswd=request.getParameter("pswd");
 
+
         u.setName(username);
         u.setPswd(pswd);
 
         if(UserDao.login(u)){
+            request.getSession().setAttribute("username",username);
+            request.getSession().setAttribute("pswd",pswd);
             request.getRequestDispatcher("/DivideServlet").forward(request,response);
         }else{
             response.sendRedirect("pswderror.jsp");

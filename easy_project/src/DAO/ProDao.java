@@ -15,7 +15,7 @@ public class ProDao {
     //加入数据库
     public static boolean addToDB(Product p){
         Connection conn= DBconnect.getConn();
-        String sql="insert into product(proname,proprice,proaddress,proimage) values(?,?,?,?,?)";
+        String sql="insert into product(proname,proprice,proaddress,proimage) values(?,?,?,?)";
         int judge=0;
         try {
             PreparedStatement ps=conn.prepareStatement(sql);
@@ -53,6 +53,7 @@ public class ProDao {
                 p.setName(rs.getString("proname"));
                 p.setAddress(rs.getString("proaddress"));
                 p.setPrice(rs.getString("proprice"));
+                p.setImage(rs.getString("proimage"));
                 list.add(p);
             }
             DBconnect.closeConn(conn, ps, rs);
@@ -79,6 +80,70 @@ public class ProDao {
             e.printStackTrace();
         }
         return count;
+    }
+
+    public static List<Product> searchPro(String proname){
+        List<Product> list = new ArrayList<>();
+        Connection conn = DBconnect.getConn();
+        String sql = "select * from product where proname="+proname;
+
+        try {
+            Statement sm=conn.createStatement();
+            ResultSet rs=sm.executeQuery(sql);
+            while(rs.next()){
+                Product p=new Product();
+                p.setId(rs.getInt("proid"));
+                p.setName(rs.getString("proname"));
+                p.setAddress(rs.getString("proaddress"));
+                p.setPrice(rs.getString("proprice"));
+                p.setImage(rs.getString("proimage"));
+                list.add(p);
+            }
+            DBconnect.closeConn(conn,sm,rs);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
+    }
+
+    public static void delPro(int[] proid){
+        Connection conn=DBconnect.getConn();
+        String sql="delete from product where proid=";
+
+        try {
+            PreparedStatement ps=conn.prepareStatement(sql);
+            for(int i=0;i<proid.length;i++){
+                ps.addBatch(sql+proid[i]);
+            }
+            ps.executeBatch();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
+    }
+
+    public static Product viewPro(String proid){
+        Connection conn=DBconnect.getConn();
+        Product p=new Product();
+        String sql="select * from product where proid="+proid;
+
+        try {
+            Statement sm=conn.createStatement();
+            ResultSet rs=sm.executeQuery(sql);
+            while(rs.next()) {
+                p.setId(rs.getInt(1));
+                p.setName(rs.getString(2));
+                p.setPrice(rs.getString(3));
+                p.setAddress(rs.getString(4));
+                p.setImage(rs.getString(5));
+            }
+            DBconnect.closeConn(conn,sm,rs);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return p;
     }
 
 }
