@@ -2,43 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77e567f0-3c5c-4a91-bd28-37aba5c276fe" name="Default" comment="add javawebMysqlo">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../csdn-test/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../csdn-test/.idea/libraries/Java_EE_6_Java_EE_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../csdn-test/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../csdn-test/src/Bean/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../csdn-test/src/Conn/DBconnect.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../csdn-test/src/DAO/RegisterDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../csdn-test/src/servlet/RegisterServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/cxj/bean/Book.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/cxj/servlet/FindServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/cxj/servlet/UpdateServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/Conn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/AddBook.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/book_list.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../test/out/production/test/DEMO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../test/out/production/test/a.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../test/out/production/test/b.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../test/out/production/test/c.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../test/out/production/test/father.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../test/out/production/test/hello$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../test/out/production/test/hello.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../test/out/production/test/son.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../test/src/DEMO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../test/src/a.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../test/src/b.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../test/src/c.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../test/src/father.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../test/src/hello.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../test/src/son.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/javawebMysqlo_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/javawebMysqlo_war_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../test/.idea/compiler.xml" afterPath="$PROJECT_DIR$/../test/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../test/.idea/misc.xml" afterPath="$PROJECT_DIR$/../test/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../test/.idea/modules.xml" afterPath="$PROJECT_DIR$/../test/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../test/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../test/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../test/test.iml" afterPath="$PROJECT_DIR$/../test/test.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../DividePage/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../DividePage/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../easy_project/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../easy_project/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../easy_project/web/addProduct.jsp" afterPath="$PROJECT_DIR$/../easy_project/web/addProduct.jsp" />
     </list>
     <ignored path="javawebMysqlo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,8 +43,8 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+            <state relative-caret-position="319">
+              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -144,8 +110,6 @@
                 <element signature="e#52677#52678#0" expanded="false" />
                 <element signature="e#53771#53772#0" expanded="false" />
                 <element signature="e#53800#53801#0" expanded="false" />
-                <element signature="e#66072#66970#0" expanded="false" />
-                <element signature="e#66969#66970#0" expanded="false" />
                 <element signature="e#67537#67538#0" expanded="false" />
                 <element signature="e#67563#67564#0" expanded="false" />
                 <element signature="e#77386#77387#0" expanded="false" />
@@ -160,10 +124,9 @@
       <file leaf-file-name="UpdateServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/cxj/servlet/UpdateServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="774">
+            <state relative-caret-position="580">
               <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <marker date="1472363398458" expanded="true" signature="863:905" ph="update tb_bo... " />
               </folding>
             </state>
@@ -185,9 +148,10 @@
       <file leaf-file-name="FindServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/cxj/servlet/FindServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
+            <state relative-caret-position="957">
               <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
               <folding>
+                <element signature="imports" expanded="false" />
                 <marker date="1472363398510" expanded="true" signature="1055:1077" ph="select * fro... tb_books" />
               </folding>
             </state>
@@ -197,7 +161,7 @@
       <file leaf-file-name="Conn.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/common/Conn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="676">
+            <state relative-caret-position="1479">
               <caret line="51" column="27" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
               <folding />
             </state>
@@ -207,10 +171,27 @@
       <file leaf-file-name="Book.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/cxj/bean/Book.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
+            <state relative-caret-position="464">
               <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
               <folding>
-                <element signature="e#381#382#0" expanded="true" />
+                <element signature="e#237#238#0" expanded="false" />
+                <element signature="e#262#263#0" expanded="false" />
+                <element signature="e#295#296#0" expanded="false" />
+                <element signature="e#323#324#0" expanded="false" />
+                <element signature="e#421#422#0" expanded="false" />
+                <element signature="e#453#454#0" expanded="false" />
+                <element signature="e#486#487#0" expanded="false" />
+                <element signature="e#518#519#0" expanded="false" />
+                <element signature="e#565#566#0" expanded="false" />
+                <element signature="e#607#608#0" expanded="false" />
+                <element signature="e#640#641#0" expanded="false" />
+                <element signature="e#669#670#0" expanded="false" />
+                <element signature="e#713#714#0" expanded="false" />
+                <element signature="e#749#750#0" expanded="false" />
+                <element signature="e#781#782#0" expanded="false" />
+                <element signature="e#809#810#0" expanded="false" />
+                <element signature="e#851#852#0" expanded="false" />
+                <element signature="e#885#886#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -264,7 +245,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
-    <option name="width" value="1932" />
+    <option name="width" value="1924" />
     <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -293,6 +274,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -389,8 +372,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -933,6 +914,7 @@
       <workItem from="1472341515518" duration="2192000" />
       <workItem from="1472353550491" duration="2389000" />
       <workItem from="1472362783995" duration="1137000" />
+      <workItem from="1472899524063" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="add javawebMysqlo">
       <created>1472126217563</created>
@@ -945,10 +927,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26926000" />
+    <option name="totallyTimeSpent" value="26936000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1932" height="1048" extended-state="0" />
+    <frame x="-9" y="-9" width="1924" height="1048" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -963,9 +945,9 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15698925" sideWeight="0.6729191" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15658747" sideWeight="0.6729191" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1664017" sideWeight="0.3270809" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1139785" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11393089" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1077,8 +1059,6 @@
             <element signature="e#52677#52678#0" expanded="false" />
             <element signature="e#53771#53772#0" expanded="false" />
             <element signature="e#53800#53801#0" expanded="false" />
-            <element signature="e#66072#66970#0" expanded="false" />
-            <element signature="e#66969#66970#0" expanded="false" />
             <element signature="e#67537#67538#0" expanded="false" />
             <element signature="e#67563#67564#0" expanded="false" />
             <element signature="e#77386#77387#0" expanded="false" />
@@ -1094,7 +1074,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <marker date="1472363398458" expanded="true" signature="863:905" ph="update tb_bo... " />
           </folding>
         </state>
@@ -1115,6 +1094,7 @@
         <state relative-caret-position="377">
           <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1472363398510" expanded="true" signature="1055:1077" ph="select * fro... tb_books" />
           </folding>
         </state>
@@ -1133,7 +1113,24 @@
         <state relative-caret-position="464">
           <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
           <folding>
-            <element signature="e#381#382#0" expanded="true" />
+            <element signature="e#237#238#0" expanded="false" />
+            <element signature="e#262#263#0" expanded="false" />
+            <element signature="e#295#296#0" expanded="false" />
+            <element signature="e#323#324#0" expanded="false" />
+            <element signature="e#421#422#0" expanded="false" />
+            <element signature="e#453#454#0" expanded="false" />
+            <element signature="e#486#487#0" expanded="false" />
+            <element signature="e#518#519#0" expanded="false" />
+            <element signature="e#565#566#0" expanded="false" />
+            <element signature="e#607#608#0" expanded="false" />
+            <element signature="e#640#641#0" expanded="false" />
+            <element signature="e#669#670#0" expanded="false" />
+            <element signature="e#713#714#0" expanded="false" />
+            <element signature="e#749#750#0" expanded="false" />
+            <element signature="e#781#782#0" expanded="false" />
+            <element signature="e#809#810#0" expanded="false" />
+            <element signature="e#851#852#0" expanded="false" />
+            <element signature="e#885#886#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1203,8 +1200,6 @@
             <element signature="e#52677#52678#0" expanded="false" />
             <element signature="e#53771#53772#0" expanded="false" />
             <element signature="e#53800#53801#0" expanded="false" />
-            <element signature="e#66072#66970#0" expanded="false" />
-            <element signature="e#66969#66970#0" expanded="false" />
             <element signature="e#67537#67538#0" expanded="false" />
             <element signature="e#67563#67564#0" expanded="false" />
             <element signature="e#77386#77387#0" expanded="false" />
@@ -1220,7 +1215,6 @@
         <state relative-caret-position="319">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <marker date="1472363398458" expanded="true" signature="863:905" ph="update tb_bo... " />
           </folding>
         </state>
@@ -1241,6 +1235,7 @@
         <state relative-caret-position="377">
           <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1472363398510" expanded="true" signature="1055:1077" ph="select * fro... tb_books" />
           </folding>
         </state>
@@ -1259,7 +1254,24 @@
         <state relative-caret-position="464">
           <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
           <folding>
-            <element signature="e#381#382#0" expanded="true" />
+            <element signature="e#237#238#0" expanded="false" />
+            <element signature="e#262#263#0" expanded="false" />
+            <element signature="e#295#296#0" expanded="false" />
+            <element signature="e#323#324#0" expanded="false" />
+            <element signature="e#421#422#0" expanded="false" />
+            <element signature="e#453#454#0" expanded="false" />
+            <element signature="e#486#487#0" expanded="false" />
+            <element signature="e#518#519#0" expanded="false" />
+            <element signature="e#565#566#0" expanded="false" />
+            <element signature="e#607#608#0" expanded="false" />
+            <element signature="e#640#641#0" expanded="false" />
+            <element signature="e#669#670#0" expanded="false" />
+            <element signature="e#713#714#0" expanded="false" />
+            <element signature="e#749#750#0" expanded="false" />
+            <element signature="e#781#782#0" expanded="false" />
+            <element signature="e#809#810#0" expanded="false" />
+            <element signature="e#851#852#0" expanded="false" />
+            <element signature="e#885#886#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1329,8 +1341,6 @@
             <element signature="e#52677#52678#0" expanded="false" />
             <element signature="e#53771#53772#0" expanded="false" />
             <element signature="e#53800#53801#0" expanded="false" />
-            <element signature="e#66072#66970#0" expanded="false" />
-            <element signature="e#66969#66970#0" expanded="false" />
             <element signature="e#67537#67538#0" expanded="false" />
             <element signature="e#67563#67564#0" expanded="false" />
             <element signature="e#77386#77387#0" expanded="false" />
@@ -1346,7 +1356,6 @@
         <state relative-caret-position="203">
           <caret line="17" column="66" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
           <folding>
-            <element signature="imports" expanded="true" />
             <marker date="1472363398458" expanded="true" signature="863:905" ph="update tb_bo... " />
           </folding>
         </state>
@@ -1367,6 +1376,7 @@
         <state relative-caret-position="377">
           <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1472363398510" expanded="true" signature="1055:1077" ph="select * fro... tb_books" />
           </folding>
         </state>
@@ -1385,7 +1395,24 @@
         <state relative-caret-position="464">
           <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
           <folding>
-            <element signature="e#381#382#0" expanded="true" />
+            <element signature="e#237#238#0" expanded="false" />
+            <element signature="e#262#263#0" expanded="false" />
+            <element signature="e#295#296#0" expanded="false" />
+            <element signature="e#323#324#0" expanded="false" />
+            <element signature="e#421#422#0" expanded="false" />
+            <element signature="e#453#454#0" expanded="false" />
+            <element signature="e#486#487#0" expanded="false" />
+            <element signature="e#518#519#0" expanded="false" />
+            <element signature="e#565#566#0" expanded="false" />
+            <element signature="e#607#608#0" expanded="false" />
+            <element signature="e#640#641#0" expanded="false" />
+            <element signature="e#669#670#0" expanded="false" />
+            <element signature="e#713#714#0" expanded="false" />
+            <element signature="e#749#750#0" expanded="false" />
+            <element signature="e#781#782#0" expanded="false" />
+            <element signature="e#809#810#0" expanded="false" />
+            <element signature="e#851#852#0" expanded="false" />
+            <element signature="e#885#886#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1411,7 +1438,6 @@
         <state relative-caret-position="754">
           <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
             <marker date="1472363398458" expanded="true" signature="863:905" ph="update tb_bo... " />
           </folding>
         </state>
@@ -1432,6 +1458,7 @@
         <state relative-caret-position="377">
           <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1472363398510" expanded="true" signature="1055:1077" ph="select * fro... tb_books" />
           </folding>
         </state>
@@ -1450,7 +1477,24 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#381#382#0" expanded="true" />
+            <element signature="e#237#238#0" expanded="false" />
+            <element signature="e#262#263#0" expanded="false" />
+            <element signature="e#295#296#0" expanded="false" />
+            <element signature="e#323#324#0" expanded="false" />
+            <element signature="e#421#422#0" expanded="false" />
+            <element signature="e#453#454#0" expanded="false" />
+            <element signature="e#486#487#0" expanded="false" />
+            <element signature="e#518#519#0" expanded="false" />
+            <element signature="e#565#566#0" expanded="false" />
+            <element signature="e#607#608#0" expanded="false" />
+            <element signature="e#640#641#0" expanded="false" />
+            <element signature="e#669#670#0" expanded="false" />
+            <element signature="e#713#714#0" expanded="false" />
+            <element signature="e#749#750#0" expanded="false" />
+            <element signature="e#781#782#0" expanded="false" />
+            <element signature="e#809#810#0" expanded="false" />
+            <element signature="e#851#852#0" expanded="false" />
+            <element signature="e#885#886#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1478,7 +1522,24 @@
         <state relative-caret-position="464">
           <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
           <folding>
-            <element signature="e#381#382#0" expanded="true" />
+            <element signature="e#237#238#0" expanded="false" />
+            <element signature="e#262#263#0" expanded="false" />
+            <element signature="e#295#296#0" expanded="false" />
+            <element signature="e#323#324#0" expanded="false" />
+            <element signature="e#421#422#0" expanded="false" />
+            <element signature="e#453#454#0" expanded="false" />
+            <element signature="e#486#487#0" expanded="false" />
+            <element signature="e#518#519#0" expanded="false" />
+            <element signature="e#565#566#0" expanded="false" />
+            <element signature="e#607#608#0" expanded="false" />
+            <element signature="e#640#641#0" expanded="false" />
+            <element signature="e#669#670#0" expanded="false" />
+            <element signature="e#713#714#0" expanded="false" />
+            <element signature="e#749#750#0" expanded="false" />
+            <element signature="e#781#782#0" expanded="false" />
+            <element signature="e#809#810#0" expanded="false" />
+            <element signature="e#851#852#0" expanded="false" />
+            <element signature="e#885#886#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1585,8 +1646,6 @@
             <element signature="e#52677#52678#0" expanded="false" />
             <element signature="e#53771#53772#0" expanded="false" />
             <element signature="e#53800#53801#0" expanded="false" />
-            <element signature="e#66072#66970#0" expanded="false" />
-            <element signature="e#66969#66970#0" expanded="false" />
             <element signature="e#67537#67538#0" expanded="false" />
             <element signature="e#67563#67564#0" expanded="false" />
             <element signature="e#77386#77387#0" expanded="false" />
@@ -1618,7 +1677,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/cxj/servlet/Servlet.java" />
     <entry file="file://$PROJECT_DIR$/src/common/Conn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
+        <state relative-caret-position="1479">
           <caret line="51" column="27" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
           <folding />
         </state>
@@ -1626,19 +1685,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cxj/bean/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
+        <state relative-caret-position="464">
           <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
           <folding>
-            <element signature="e#381#382#0" expanded="true" />
+            <element signature="e#237#238#0" expanded="false" />
+            <element signature="e#262#263#0" expanded="false" />
+            <element signature="e#295#296#0" expanded="false" />
+            <element signature="e#323#324#0" expanded="false" />
+            <element signature="e#421#422#0" expanded="false" />
+            <element signature="e#453#454#0" expanded="false" />
+            <element signature="e#486#487#0" expanded="false" />
+            <element signature="e#518#519#0" expanded="false" />
+            <element signature="e#565#566#0" expanded="false" />
+            <element signature="e#607#608#0" expanded="false" />
+            <element signature="e#640#641#0" expanded="false" />
+            <element signature="e#669#670#0" expanded="false" />
+            <element signature="e#713#714#0" expanded="false" />
+            <element signature="e#749#750#0" expanded="false" />
+            <element signature="e#781#782#0" expanded="false" />
+            <element signature="e#809#810#0" expanded="false" />
+            <element signature="e#851#852#0" expanded="false" />
+            <element signature="e#885#886#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cxj/servlet/FindServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
+        <state relative-caret-position="957">
           <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1472363398510" expanded="true" signature="1055:1077" ph="select * fro... tb_books" />
           </folding>
         </state>
@@ -1646,10 +1723,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cxj/servlet/UpdateServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
+        <state relative-caret-position="580">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <marker date="1472363398458" expanded="true" signature="863:905" ph="update tb_bo... " />
           </folding>
         </state>
@@ -1657,8 +1733,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+        <state relative-caret-position="319">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
           <folding />
         </state>
       </provider>

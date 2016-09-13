@@ -10,7 +10,9 @@
   <head>
     <title>$Title$</title>
     <script language="JavaScript">
-
+      window.onload=function () {
+        window.open("test.jsp","test","width=600,height=400,toolbar=no,location=no");
+      }
     </script>
   </head>
   <body>

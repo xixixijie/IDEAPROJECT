@@ -10,22 +10,14 @@
   <head>
     <title>$Title$</title>
     <script language="JavaScript">
-      function check() {
-        var str=form1.name1.value;
-        if(str==""){
-          alert("请输入");
-          form1.name1.focus();
-          return false;
-        }else{
-          return true;
-        }
+      window.onload=function () {
+        window.open("test.jsp","test","width=600,height=400,toolbar=no,location=no");
       }
     </script>
   </head>
   <body>
-  <form name="form1" action="" method="post" onsubmit="return check()">
-    <input name="name1" type="text">
-    <input type="submit">
+  <form name="form1" action="" method="post" >
+    <input type="checkbox" value="1">
   </form>
   </body>
 </html>

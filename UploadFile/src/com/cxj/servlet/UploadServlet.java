@@ -23,7 +23,7 @@ public class UploadServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out =response.getWriter();
-        String path=this.getServletContext().getRealPath("/");//获取服务器地址
+        String path=this.getServletContext().getRealPath("\\");//获取服务器地址
         Part p=request.getPart("file1");
 
         if(p.getContentType().contains("image")){
@@ -33,8 +33,8 @@ public class UploadServlet extends HttpServlet {
             String fname1=ap.getSubmittedFileName(); //获取上传文件名
             int path_idx=fname1.lastIndexOf(" ")+1;        //对上传文件名进行截取
             String fname2=fname1.substring(path_idx,fname1.length());
-            System.out.println(path+"/upload/"+fname2);
-            p.write(path+"/upload/"+fname2);
+            System.out.println(path+"upload\\"+fname2);
+            p.write(path+"upload\\"+fname2);
             out.print("上传文件成功");
         }else {
             out.write("请选择图片文件！！");
