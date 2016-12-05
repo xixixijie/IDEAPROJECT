@@ -19,15 +19,15 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="Tomcat 7.0.70" level="application_server_libraries" />
+    <orderEntry type="library" name="Java EE 6-Java EE 6" level="application" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="file://C:/Program Files/Apache Software Foundation/Tomcat 7.0/lib" />
+          <root url="file:///Library/Tomcat/lib" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
-        <jarDirectory url="file://C:/Program Files/Apache Software Foundation/Tomcat 7.0/lib" recursive="false" />
+        <jarDirectory url="file:///Library/Tomcat/lib" recursive="false" />
       </library>
     </orderEntry>
   </component>
