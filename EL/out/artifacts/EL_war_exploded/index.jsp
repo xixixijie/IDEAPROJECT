@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@page isELIgnored="true"%>
 <html>
   <head>
     <title>$Title$</title>
@@ -16,6 +17,6 @@
     request.setAttribute("user1",null);
   %>
   ${empty user}
-  ${empty user1}
+  \${"chenxijie"}
   </body>
 </html>

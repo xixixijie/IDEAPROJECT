@@ -1,0 +1,59 @@
+
+		#bigDiv{
+			width:1386px;
+            height:600px;
+			<!--background-color:white;-->
+		}
+		#leftDiv{
+           margin-left:50px;
+            margin-top:50px;
+			height:500px;
+			width:200px;	
+			background:url(../img/leftNav.jpg);
+            float:left;
+            border-radius:50px;
+		}
+		
+		#rightDiv{
+            margin-left:105px;
+            margin-top:50px;
+			width:800px;	
+			height:500px;
+			background:url(../img/competitionRight.jpg);
+            border-radius:50px;
+		}
+		#leftDiv ul{
+			list-style:none;
+			width:180px;
+            height:120px;
+            margin-left:5px;
+            margin-top:20px;
+			padding-left:0px;
+            position: absolute;
+		}
+		#leftDiv ul li{
+		    border:1px solid #339;
+			background-color:#FFE4C4;
+            font-size:30px;
+			color:#000000;
+			width:180px;
+            height:50px;
+            margin-left:5px;
+            margin-top:7px;
+            border-radius:50px;
+            text-align: center;
+		}
+		#leftDiv ul li span{
+		    margin-top:10px;	
+		}
+		a.left{
+			color :#000000;
+			text-decoration:none;
+		}
+		#rightDiv h1{
+			font-weight:bold;
+			font-style:italic;
+			font-size:60px;
+			color:black;
+			text-align: center;
+		}

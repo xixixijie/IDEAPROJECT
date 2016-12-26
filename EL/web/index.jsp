@@ -6,6 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!--<%@page isELIgnored="true"%>
+ 禁用EL表达式-->
 <html>
   <head>
     <title>$Title$</title>
@@ -15,7 +17,10 @@
     request.setAttribute("user","");
     request.setAttribute("user1",null);
   %>
+  <!--判读是否为空jjo／-->
   ${empty user}
-  ${empty user1}43
+  <!--在EL表达式之前加 \ 如下-->
+  \${"chenxijie"}
+  <!--EL支持查找request ，session，application 和 page-->
   </body>
 </html>

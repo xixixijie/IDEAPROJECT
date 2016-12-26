@@ -1,0 +1,160 @@
+#bigDiv {
+    width: 1386px;
+    heigth: 1000px;
+    background-color: #000;
+}
+
+#leftDiv {
+    height: 1000px;
+    width: 260px;
+    float: left;
+    padding: 0px;
+    background-color: #fff;
+	border:0px solid #f00;
+}
+li.leftTitle{
+	text-align:center;
+	width:250px;
+	color:#fff;
+	background:#595959;
+	list-style:none;
+}
+
+#leftDiv1 {
+    height: 450px;
+    width: 260px;
+    float: top;
+    padding: 0px;
+    background: url(../img/left1.jpg) no-repeat;
+}
+#leftDiv1 ul{
+	height:450px;
+	width:260px;
+	
+}
+
+#leftDiv1 ul li{
+	border:0px solid #000;
+	padding-left:10px;
+	float:top;
+	
+}
+#leftDiv2 {
+    height: 450px;
+    width: 260px;
+    float: top;
+    padding: 0px;
+    background: url(../img/left2.jpg) no-repeat;
+}
+
+#leftDiv2 ul {
+    height:450px;
+	width:260px;
+}
+
+#leftDiv2 ul li {
+ border:0px solid #000;
+	padding-left:10px;
+	float:top;
+}
+#leftDiv2 ul li{
+	border:0px solid #000;
+	padding-left:10px;
+	float:top;
+	
+}
+
+#centerDiv {
+    width: 750px;
+    float: left;
+    padding: 10px;
+    height: 1000px;
+	color:black;
+}
+
+span.bigLetter{
+	 font-size:50px;
+	 color:black;
+}
+
+span.centerTitle{
+	font-size:20px;
+}
+
+#centerDiv1 {
+    width: 750px;
+    float: top;
+    padding: 10px;
+	margin: 5px 20px;
+    background: url(../img/center1.jpg) no-repeat;
+    height: 200px;
+    border-radius: 50px;
+}
+#centerDiv1 ul {
+border:0px solid red;
+    padding-left: 35px;
+}
+
+#centerDiv2 {
+    width: 750px;
+    float: top;
+    padding: 10px;
+	margin: 5px 20px;
+    border-radius: 50px;
+    height: 200px;
+    background: url(../img/center2.jpg) no-repeat;
+}
+#centerDiv2 ul {
+    border:0px solid red;
+    padding-left: 35px;
+}
+
+#centerDiv3 {
+    width: 750px;
+    float: top;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 5px 20px;
+    height: 200px;
+    background: url(../img/center3.jpg) no-repeat;
+
+<!-- background-position: 50 % 50 %;
+¹Ì¶¨Î»ÖÃ background-attachment: fixed;
+-->
+}
+#centerDiv3 ul {
+    border:0px solid red;
+    padding-left: 35px;
+}
+#rightDiv {
+    width: 260px;
+    float: right;
+    padding: 0px;
+    margin-left: 20px;
+    height: 500px;
+     background: url(../img/right1.jpg) no-repeat;
+}
+
+#rightDiv ul {
+    border: 0px solid #339;
+    list-style: none;
+    height: 30px;
+    width: 260px;
+    float: top;
+    text-align: center;
+    background-color: #595959;
+}
+
+#rightDiv ul li {
+    border: 0px solid #339;
+    border-right: 1px solid #339;
+    background-color: #000;
+    color: #fff;
+    width: 260px;
+    float: left;
+    background-color: #595959;
+}
+
+#rightDiv ul li span {
+    padding-left: 0px;
+}

@@ -1,0 +1,29 @@
+
+        #main_body{
+        	height:422px;
+        	width:1389px;
+        	color:white;
+        	
+        }
+        a.button1{
+        	background:transparent url(../img/findTea.JPG);
+        	color:black;
+        	display:block;
+        	height:136px;
+        	width:689px;
+        	font:normal 50px sans-serif;
+        	text-align:center;
+        	margin-top: 100px;
+        	margin-left:350px;
+        }
+        a.button2{
+        	background:transparent url(../img/resume.JPG);
+        	color:black;
+        	display:block;
+        	height:136px;
+        	width:689px;
+        	font:normal 50px sans-serif;
+        	margin-top: 50px;
+        	margin-left: 350px;
+        }
+        

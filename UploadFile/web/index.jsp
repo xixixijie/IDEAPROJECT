@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>$Title$</title>ß
   </head>
   <body>
   <!--enctype="multipart/form-data" 在使用包含文件上传控件的表单时，必须使用该值。-->

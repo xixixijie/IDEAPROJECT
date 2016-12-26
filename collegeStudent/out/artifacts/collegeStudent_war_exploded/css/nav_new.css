@@ -1,0 +1,133 @@
+        *{
+			padding:0px;
+			margin:0px;
+		}
+		body{
+			margin-left:50%-750px;
+		}
+		#container{
+			height:1500px;
+			border:0px solid #229;
+			position:absolute;
+			left:0%;
+			margin-right:0px;
+			<!--left:0%;margin-left:0px; right:0%;���Ҳ���,Ŀǰ������ҳ�Ŵ���С���ı�-->-->
+			clear:both;
+			
+		}
+		#header{
+			height:100px;		
+			width:1386px;
+		}
+		#header img{
+			float: left;
+			height: 90px;
+			width: 110px;
+			margin-top: 5px;
+			margin-left: 20px;
+		}
+		#textbox{
+			float: left;
+			height: 60px;
+			margin-top: 20px;
+			margin-left: 20px;
+			margin-bottom: 20px;
+		}
+		#textbox span.first{
+			font-family: "楷体";
+			font-weight: 900;
+			font-size: 28px;
+			float: left;
+		}
+		#textbox span.second{
+			font-family: arial;
+			font-size: 20px;
+			float: left;
+		}
+		#header ul{
+            height:30px;
+            width:200px;
+            float: right;
+		}
+		#header ul li{
+            width:100px;
+            height:30px;
+            line-height: 30px;
+            float:right;
+            text-align:center;
+            padding-top: 70px;
+            font-size: 15px;
+		}
+		#header ul li span a{
+			color:#000;
+			text-decoration:none;
+		}
+		#header ul li span a:hover{
+			text-decoration:underline;
+			color:#f00;
+		}
+		#nav ul{
+			height:30px;
+			width:1386px;	
+		}
+		#nav ul li{
+			float:left;
+			background-color:#000;
+			height: 30px;
+			width:173.25px;
+		}
+		#nav ul li span a{
+			font-size: 17px;
+			font-family: "宋体";
+			text-align:center;
+			line-height: 30px;
+			text-decoration: none;
+			color:#fff;
+		}
+		#nav ul li span a:hover{
+			background-position: right -3px;
+		}
+		#picture {
+			height: 203px;
+			width: 1386px;
+			background: url(../img/library.jpg);
+		}
+		#signIn{
+			width:1386px;
+			height:35px;
+			background-color:#A9A9A9;
+			color:#fff;
+			text-align:left;
+		}
+		#signIn form{
+			margin-left: 20px;
+			line-height: 35px;
+			font-size: 16px;
+			font-family: "宋体";
+		}
+		#signIn span{
+			float: right;
+			margin-right: 70px;
+		}	
+		input.input{
+			margin-right: 10px;
+			border-radius:7px;
+			background-color:#fff;
+			height: 20px;
+			line-height: 16px;
+			padding-left: 5px;
+			padding-right: 5px;
+			border: 0px;
+		}
+		input.button{
+			line-height: 23px;
+			font-family: "楷体";
+			font-size: 16px;
+			background-color: gray;
+			color: #fff;
+			margin-right: 10px;
+			width:50px;
+			height:23px;
+			border-radius:7px;
+			border:1px;
+		}

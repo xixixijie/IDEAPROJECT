@@ -1,0 +1,104 @@
+       *{
+			padding:0px;
+			margin:0px;
+		}
+
+		#container{
+			height:1500px;
+			border:0px solid #229;
+			position:absolute;
+			left:0%;
+			margin-right:0px;
+			
+			
+			<!--left:0%;margin-left:0px; right:0%;���Ҳ���,Ŀǰ������ҳ�Ŵ���С���ı�-->-->
+			clear:both;
+			
+		}
+		
+		#header{
+			height:100px;		
+			width:1386px;
+			color:#fff;
+			background:url(../img/school.jpg);
+		}
+		#header ul{
+            height:30px;
+            width:1386px;
+		}
+		#header ul li{
+			
+            width:150px;
+            height:30px;
+            float:right;
+            text-align:right;
+            padding-top: 70px;
+            font-size: 15px;
+		}
+		#header ul li span a{
+			color:#000;
+			text-decoration:none;
+		}
+		#header ul li span a:hover{
+			text-decoration:underline;
+			color:#f00;
+		}
+		#nav{
+			
+		}
+		#nav ul{
+			border:1px solid #339;
+			list-style:none;
+			height:23px;
+			width:1386px;
+			float:left;
+		}
+		#nav ul li{
+		}
+
+		#nav ul li span a{
+			text-align:center;
+			border:1px solid #339;
+			border-right:1px solid #339;
+			background-color:#000;
+			color:#fff;
+			width:171.2px;
+			float:left;
+		}
+		#picture {
+			height: 200px;
+			width: 1386px;
+			background: url(../img/library.jpg);
+		<!-- picture��Ԥ��ͼ�з����˶���ͼ���ڵ��������棬����ͼ���-->-->
+		}
+		#signIn{
+			width:1356px;
+			height:40px;
+			background-color:#A9A9A9;
+			color:#fff;
+			text-align:left;
+			padding-top:13px;
+			padding-left: 30px;
+			border:0px;
+			
+		}
+		span.welcome{
+			float: left;
+			padding-left: 0px;
+		}
+		span.person{
+			float:right;
+			padding-right: 50px;
+		}
+		
+		input.input{
+			border-radius:50px;
+			background-color:#fff;
+		}
+		
+		input.button{
+			width:50px;
+			height:23px;
+			border-radius:40px;
+			border:1px;
+		}

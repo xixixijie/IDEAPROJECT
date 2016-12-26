@@ -1,0 +1,41 @@
+
+		#bigDiv{
+			width:1386px;
+                        height:600px;
+			background-color:white;
+			float:;
+		}
+		#leftDiv{
+                        margin-left:45px;
+                        margin-top:0px;
+			height:700px;
+			width:250px;	
+			background:url(../img/registerLeft.jpg);
+                        float:left;
+                        border-radius:50px;
+		}
+		
+		#rightDiv{
+                        margin-left:405px;
+                        margin-top:35px;
+			width:1000px;	
+			height:700px;
+			background:url(../img/registerRight.jpg);
+                        border-radius:50px;
+                        color:black;
+		}
+		#register{
+			padding-left:150px;
+			border: 0px solid #f00;
+		}
+		input.rInput{
+			line-height: 25px;
+			border-radius:50px; 
+			width: 200px;
+			margin-bottom:30px;
+		}
+		
+		#rButton{
+			width:250px;
+			height:30px;
+		}

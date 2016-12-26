@@ -1,0 +1,23 @@
+
+        #main_body{
+        	width:1389px;
+        	height: 708px;
+        	background-color:white;
+        	
+        }
+        a.dButton{
+        	background:url(../img/briefMessage.jpg) no-repeat;
+        	display:block;
+        	height:136px;
+        	width:689px;
+        	margin-left:350px;
+			border: 0px solid red;
+        	text-decoration: none;
+        }
+        p.details{
+        	font-size: 20px;
+        	color:dimgray;
+        	margin-left: 50px;
+        	margin-top: 7px;
+			margin-bottom: 10px;
+        }
