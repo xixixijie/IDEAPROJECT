@@ -1,4 +1,4 @@
-<%@ page import="bean.News" %>
+<%@ page import="Entity.NewsEntity" %>
 <%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: jay chen
@@ -19,8 +19,8 @@
     <ul>
         <h1>竞赛项目</h1>
         <%
-            List<News> list= (List<News>) request.getAttribute("list");
-            for(News n:list){
+            List<NewsEntity> list= (List<NewsEntity>) request.getAttribute("list");
+            for(NewsEntity n:list){
         %>
         <li><span><a href="news/<%=n.getSrc()%>"><%=n.getTitle()%></a></span></li>
         <%

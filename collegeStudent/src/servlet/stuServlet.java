@@ -1,8 +1,7 @@
 package servlet;
 
-import bean.Student;
+import Entity.StudentEntity;
 import dao.stuAction;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -22,8 +21,8 @@ public class stuServlet extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
 
         String action=request.getParameter("action");
-        Student stu=new Student();
-        List<Student> list=new ArrayList<Student>();
+        StudentEntity stu=new StudentEntity();
+        List<StudentEntity> list=new ArrayList<StudentEntity>();
         boolean flag=false;
 
         switch (action){
@@ -73,7 +72,7 @@ public class stuServlet extends HttpServlet {
         }else{
             switch (action){
                 case "publish":
-                    request.getRequestDispatcher("index.jsp").forward(request,response);
+                    response.sendRedirect("index.jsp");
                     break;
                 case "search":
                     System.out.println("查看列表失败");

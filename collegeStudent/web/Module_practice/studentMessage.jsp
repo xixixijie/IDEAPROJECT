@@ -1,5 +1,5 @@
-<%@ page import="bean.User" %>
-<%@ page import="bean.Student" %><%--
+<%@ page import="Entity.UserEntity" %>
+<%@ page import="Entity.StudentEntity" %><%--
   Created by IntelliJ IDEA.
   User: jay chen
   Date: 2016/9/12
@@ -61,7 +61,7 @@
     <!--登录窗口-->
     <div id="signIn">
         <%
-            User u = (User) request.getSession().getAttribute("user");
+            UserEntity u = (UserEntity) request.getSession().getAttribute("user");
             String error = (String) request.getAttribute("error");
             String id = (String) request.getAttribute("id");
             if (u == null && error == null) {
@@ -109,7 +109,7 @@
         <div id="stu">
             <div id="details">
                 <%
-                    Student stu= (Student) request.getAttribute("student");
+                    StudentEntity stu= (StudentEntity) request.getAttribute("student");
                 %>
                 <p >&nbsp;姓&nbsp;&nbsp;名&nbsp;: &nbsp;&nbsp;
                         <%=stu.getName()%>

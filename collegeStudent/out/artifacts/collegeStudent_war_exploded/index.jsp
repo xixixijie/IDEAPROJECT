@@ -1,12 +1,6 @@
-<%@ page import="bean.User" %>
+<%@ page import="Entity.UserEntity" %>
 <%@ page import="java.util.List" %>
-<%@ page import="bean.News" %><%--
-  Created by IntelliJ IDEA.
-  User: jay chen
-  Date: 2016/9/15
-  Time: 22:22
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="Entity.NewsEntity" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -61,7 +55,7 @@
     <!--登录窗口-->
     <div id="signIn">
         <%
-            User u = (User) request.getSession().getAttribute("user");
+            UserEntity u = (UserEntity) request.getSession().getAttribute("user");
             String error = (String) request.getAttribute("error");
             String id = (String) request.getAttribute("id");
             if (u == null && error == null) {
@@ -113,8 +107,8 @@
                 <ul>
                     <li class="leftTitle"><span class="leftTitle">最新公告</span></li>
                     <%
-                        List<News> lD1= (List<News>) request.getAttribute("lD1");
-                        for(News n:lD1){
+                        List<NewsEntity> lD1= (List<NewsEntity>) request.getAttribute("lD1");
+                        for(NewsEntity n:lD1){
                     %>
                     <li><span><a href="news/<%=n.getSrc()%>"><%=n.getTitle()%></a></span></li>
                  <%
@@ -127,8 +121,8 @@
                 <ul>
                     <li class="leftTitle"><span>社团资讯</span></li>
                     <%
-                        List<News> lD2= (List<News>) request.getAttribute("lD2");
-                        for(News n:lD2){
+                        List<NewsEntity> lD2= (List<NewsEntity>) request.getAttribute("lD2");
+                        for(NewsEntity n:lD2){
                     %>
                     <li><span><a href="news/<%=n.getSrc()%>"><%=n.getTitle()%></a></span></li>
                     <%
@@ -142,8 +136,8 @@
                 <ul>
                     <h1><span class="bigLetter">S</span><span class="centerTitle">社团活动</span></h1>
                     <%
-                        List<News> cD1= (List<News>) request.getAttribute("cD1");
-                        for(News n:cD1){
+                        List<NewsEntity> cD1= (List<NewsEntity>) request.getAttribute("cD1");
+                        for(NewsEntity n:cD1){
                     %>
                     <li><span><a href="news/<%=n.getSrc()%>"><%=n.getTitle()%></a></span></li>
                     <%
@@ -156,8 +150,8 @@
                 <ul>
                     <h1><span class="bigLetter">K</span><span class="centerTitle">科技竞赛</span></h1>
                     <%
-                        List<News> cD2= (List<News>) request.getAttribute("cD2");
-                        for(News n:cD2){
+                        List<NewsEntity> cD2= (List<NewsEntity>) request.getAttribute("cD2");
+                        for(NewsEntity n:cD2){
                     %>
                     <li><span><a href="news/<%=n.getSrc()%>"><%=n.getTitle()%></a></span></li>
                     <%
@@ -170,8 +164,8 @@
                 <ul>
                     <h1><span class="bigLetter">Z</span><span class="centerTitle">资源下载</span></h1>
                     <%
-                        List<News> cD3= (List<News>) request.getAttribute("cD3");
-                        for(News n:cD3){
+                        List<NewsEntity> cD3= (List<NewsEntity>) request.getAttribute("cD3");
+                        for(NewsEntity n:cD3){
                     %>
                     <li><span><a href="news/<%=n.getSrc()%>"><%=n.getTitle()%></a></span></li>
                     <%

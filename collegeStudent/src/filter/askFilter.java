@@ -1,8 +1,7 @@
 package filter;
 
-import bean.News;
+import Entity.NewsEntity;
 import dao.newsAction;
-
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
@@ -29,11 +28,11 @@ public class askFilter implements Filter {
         req.setCharacterEncoding("UTF-8");
         resp.setCharacterEncoding("UTF-8");
         //lD leftDiv cD centerDiv
-        List<News> lD1=new ArrayList<News>();
-        List<News> lD2=new ArrayList<News>();
-        List<News> cD1=new ArrayList<News>();
-        List<News> cD2=new ArrayList<News>();
-        List<News> cD3=new ArrayList<News>();
+        List<NewsEntity> lD1=new ArrayList<>();
+        List<NewsEntity> lD2=new ArrayList<>();
+        List<NewsEntity> cD1=new ArrayList<>();
+        List<NewsEntity> cD2=new ArrayList<>();
+        List<NewsEntity> cD3=new ArrayList<>();
 
         lD1 = newsAction.searchNews("news");
         lD2 =newsAction.searchNews("community_committee");

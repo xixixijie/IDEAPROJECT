@@ -1,4 +1,4 @@
-<%@ page import="bean.User" %><%--
+<%@ page import="Entity.UserEntity" %><%--
   Created by IntelliJ IDEA.
   User: jay chen
   Date: 2016/9/12
@@ -13,45 +13,45 @@
     <link rel="stylesheet" href="../css/register.css" type="text/css"/>
     <script language="JavaScript">
         function register() {
-            if (form1.id.value==""){
+            if (form2.id.value==""){
                 alert("请输入学号");
-                form1.id.focus();
+                form2.id.focus();
                 return;
-            }else if(form1.name.value==""){
+            }else if(form2.name.value==""){
                 alert("请输入用户名");
-                form1.name.focus();
+                form2.name.focus();
                 return;
-            }else if(form1.pwd.value==""){
+            }else if(form2.pwd.value==""){
                 alert("请输入密码");
-                form1.pwd.focus();
+                form2.pwd.focus();
                 return;
-            }else if(form1.gender.value==""){
+            }else if(form2.gender.value==""){
                 alert("请选择性别");
-                form1.gender.focus();
+                form2.gender.focus();
                 return;
-            }else if(form1.age.value==""){
+            }else if(form2.age.value==""){
                 alert("请输入年龄");
-                form1.age.focus();
+                form2.age.focus();
                 return;
-            }else if(form1.university.value==""){
+            }else if(form2.university.value==""){
                 alert("请输入学校");
-                form1.university.focus();
+                form2.university.focus();
                 return;
-            }else if(form1.college.value==""){
+            }else if(form2.college.value==""){
                 alert("请输入学院");
-                form1.college.focus();
+                form2.college.focus();
                 return;
-            }else if(form1.major.value==""){
+            }else if(form2.major.value==""){
                 alert("请输入专业");
-                form1.major.focus();
+                form2.major.focus();
                 return;
-            }else if(form1.email.value==""){
+            }else if(form2.email.value==""){
                 alert("请输入邮箱");
-                form1.email.focus();
+                form2.email.focus();
                 return;
             }
-            form1.action="../userServlet?action=register";
-            form1.submit();
+            form2.action="../userServlet?action=register";
+            form2.submit();
 
         }
     </script>
@@ -63,7 +63,6 @@
         <ul>
             <li><span ><a href="首页.html">加入收藏</a></span></li>
             <li><span><a href="首页.html">设为首页</a></span></li>
-
         </ul>
     </div>
     <div id="nav">
@@ -90,7 +89,7 @@
     <!--登录窗口-->
     <div id="signIn">
         <%
-            User u=(User)request.getSession().getAttribute("user");
+            UserEntity u=(UserEntity) request.getSession().getAttribute("user");
             String error= (String) request.getAttribute("error");
             String id=(String)request.getAttribute("id");
             if(u==null&&error==null){
@@ -101,7 +100,7 @@
             密码：
             <input type="password" class="input" name="pwd">
             <input type="button" class="button" value="登录" onclick="signCheck()"/>
-            <input type="button" class="button" value="注册" onclick="javascipt:location.href='register/register.jsp'"/>
+            <input type="button" class="button" value="注册" onclick="javascipt:location.href='register.jsp'"/>
             <span class="person"> 访问人数:<%=application.getAttribute("count")%></span>
         </form>
 
@@ -117,7 +116,7 @@
             <input type="password" class="input" name="pwd">
 
             <input type="button" class="button" value="登录" onclick="signCheck()"/>
-            <input type="button" class="button" value="注册" onclick="javascipt:location.href='register/register.jsp'"/>
+            <input type="button" class="button" value="注册" onclick="javascipt:location.href='register.jsp'"/>
             <span class="person"> 访问人数:<%=application.getAttribute("count")%></span>
         </form>
 
@@ -140,7 +139,7 @@
             <br>
             <br>
             <div id="register">
-                <form name="form1" action="" method="post">
+                <form name="form2" action="" method="post">
                     学号: <input class="rInput" type="text" name="id"/><br>
                     姓名: <input class="rInput" type="text" name="name"/><br>
                     密码: <input class="rInput" type="password" name="pwd"/><br>
@@ -156,6 +155,7 @@
                     邮箱: <input class="rInput" type="text" name="email"><br>
                     <br>
                     <input type="button" value="注册" id="rButton" onclick="register()">
+
                 </form>
             </div>
         </div>

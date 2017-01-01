@@ -1,6 +1,6 @@
 package servlet;
 
-import bean.User;
+import Entity.UserEntity;
 import dao.userAction;
 
 import javax.servlet.annotation.WebServlet;
@@ -21,7 +21,7 @@ public class userServlet extends javax.servlet.http.HttpServlet {
         String url=request.getParameter("url");
 
         String action=request.getParameter("action");
-        User u=new User();
+        UserEntity u=new UserEntity();
         boolean flag=false;
 
         switch(action){
@@ -50,11 +50,12 @@ public class userServlet extends javax.servlet.http.HttpServlet {
             switch(action){
                 case "login":
                     request.getSession().setAttribute("user",u);
+                    System.out.printf(u.getName()+u.getId());
                     response.sendRedirect(url);
                     break;
                 case "register":
                     request.getSession().setAttribute("user",u);
-                    request.getRequestDispatcher("index.jsp").forward(request,response);
+                    response.sendRedirect("index.jsp");
                     break;
                 case "logout":
                     request.getSession().removeAttribute("user");

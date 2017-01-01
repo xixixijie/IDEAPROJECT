@@ -1,8 +1,8 @@
 package servlet;
 
-import bean.News;
-import dao.newsAction;
 
+import Entity.NewsEntity;
+import dao.newsAction;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -20,7 +20,7 @@ public class newsServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
-        List<News> list=new ArrayList<News>();
+        List<NewsEntity> list=new ArrayList<NewsEntity>();
         String path=this.getServletContext().getRealPath("/");
         //kind 为数据库表名
         String kind=request.getParameter("kind");

@@ -1,6 +1,6 @@
-<%@ page import="bean.User" %>
+<%@ page import="Entity.UserEntity" %>
 <%@ page import="java.util.List" %>
-<%@ page import="bean.Student" %><%--
+<%@ page import="Entity.StudentEntity" %><%--
   Created by IntelliJ IDEA.
   User: jay chen
   Date: 2016/9/12
@@ -62,7 +62,7 @@
     <!--登录窗口-->
     <div id="signIn" >
         <%
-            User u = (User) request.getSession().getAttribute("user");
+            UserEntity u = (UserEntity) request.getSession().getAttribute("user");
             String error = (String) request.getAttribute("error");
             String id = (String) request.getAttribute("id");
             if (u == null && error == null) {
@@ -108,9 +108,9 @@
         <br/>
         <div id="main_body">
             <%
-                List<Student> list= (List<Student>) request.getAttribute("list");
+                List<StudentEntity> list= (List<StudentEntity>) request.getAttribute("list");
 
-                for(Student s:list){
+                for(StudentEntity s:list){
             %>
 
             <a class="dButton" onclick="view()" href="../stuServlet?action=view&id=<%=s.getId()%>">

@@ -1,7 +1,11 @@
 package dao;
 
+import DBOperation.DBOperation;
 import DBconnect.DBconnect;
-import bean.Student;
+import Entity.StudentEntity;
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import util.HibernateUtil;
 
 import java.sql.*;
 import java.text.DateFormat;
@@ -13,41 +17,15 @@ import java.util.Date;
  */
 public class stuAction {
     //学生发布信息
-    public static boolean publish(Student stu){
-        Connection conn=DBconnect.getConn();
-        String sql="insert into student(name,age,gender,grade,subject,address,time,date,email) values(?,?,?,?,?,?,?,?,?)";
-        int flag=0;
+    public static boolean publish(StudentEntity stu){
         Calendar now=Calendar.getInstance();
         String date=""+now.get(Calendar.YEAR)+"-"+(now.get(Calendar.MONTH)+1)+"-"+now.get(Calendar.DAY_OF_MONTH);
-
-        try {
-            PreparedStatement ps=conn.prepareStatement(sql);
-
-
-            ps.setString(1,stu.getName());
-            ps.setString(2,stu.getAge());
-            ps.setString(3,stu.getGender());
-            ps.setString(4,stu.getGrade());
-            ps.setString(5,stu.getSubject());
-            ps.setString(6,stu.getAddress());
-            ps.setString(7,stu.getTime());
-            ps.setString(8,date);
-            ps.setString(9,stu.getEmail());
-
-            flag=ps.executeUpdate();
-            DBconnect.closeConn(conn,ps);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        if(flag>0){
-            return true;
-        }else{
-            return false;
-        }
+        stu.setDate(date);
+        return DBOperation.add(stu);
     }
     //展示学生简要信息
-    public static List<Student> search(){
-        List<Student> list=new ArrayList<Student>();
+    public static List<StudentEntity> search(){
+        List<StudentEntity> list=new ArrayList<StudentEntity>();
         Connection conn=DBconnect.getConn();
         String sql="select id,name,grade,subject,date from student";
 
@@ -57,7 +35,7 @@ public class stuAction {
 
 
             while(rs.next()){
-                Student stu=new Student();
+                StudentEntity stu=new StudentEntity();
                 String date=rs.getString(5);
 
                 //设置时间，如果超过一个月，就从数据库中删除该发布信息
@@ -83,79 +61,48 @@ public class stuAction {
 
     }
     //查看学生详细信息
-    public static Student view(String id){
-        Connection conn=DBconnect.getConn();
-        Student stu=new Student();
-        String sql="select * from student where id=?";
+    public static StudentEntity view(String id){
+        Session session=null;
+        StudentEntity studentEntity=null;
+        try{
+            session= HibernateUtil.getSession();
+            studentEntity=(StudentEntity)session.load(StudentEntity.class,id);
 
-        try {
-
-            PreparedStatement ps=conn.prepareStatement(sql);
-            ps.setString(1,id);
-            ResultSet rs=ps.executeQuery();
-            rs.next();
-            stu.setId(rs.getInt(1));
-            stu.setName(rs.getString(2));
-            stu.setAge(rs.getString(3));
-            stu.setGender(rs.getString(4));
-            stu.setGrade(rs.getString(5));
-            stu.setSubject(rs.getString(6));
-            stu.setAddress(rs.getString(7));
-            stu.setTime(rs.getString(8));
-            stu.setDate(rs.getString(9));
-
-            DBconnect.closeConn(conn,ps,rs);
-
-        } catch (SQLException e) {
-            e.printStackTrace();
+        }catch (HibernateException he){
+            session.getTransaction().rollback();
+            System.err.printf("view studentInfo failed");
+            he.printStackTrace();
+        }finally {
+            return  studentEntity;
         }
-
-
-        return stu;
     }
     //删除过期的学生发布
-    Calendar now=Calendar.getInstance();
     private static boolean delete(String id){
-        Connection conn=DBconnect.getConn();
-        String sql1="select email from student where id=?";
-        String sql2="delete from student where id=?";
-        int flag=0;
+        Session session=null;
+        boolean flag=false;
         try {
+            session=HibernateUtil.getSession();
+            StudentEntity studentEntity=(StudentEntity)session.get(StudentEntity.class,id);
             //再删除的同时往学生邮箱发送一封抱歉信
-            PreparedStatement ps=conn.prepareStatement(sql1);
-            ps.setString(1,id);
-            ResultSet rs=ps.executeQuery();
-            String email=rs.getString("email");
+            String email=studentEntity.getEmail();
             //调用 发送功能 并传递email函数
 
-
-
             //删除学生信息
-            ps=conn.prepareStatement(sql2);
-            ps.setString(1,id);
-
-            flag=ps.executeUpdate();
-
-
-        } catch (SQLException e) {
-            e.printStackTrace();
+            session.delete(studentEntity);
+            session.flush();
+            flag=true;
+        } catch (HibernateException he) {
+            System.err.printf("delete student failed");
+            he.printStackTrace();
+        }finally {
+            HibernateUtil.closeSession();
+            return flag;
         }
 
-        if(flag!=0){
-            return true;
-        }else{
-            return false;
-        }
 
     }
-
     //比较日期
     private static boolean dateCompare(String date){
-        /*
-        if (date == null) {
-            return true;
-        }
-        */
         Calendar now=Calendar.getInstance();
         int year=Integer.parseInt(date.split("-")[0]);
         int month=Integer.parseInt(date.split("-")[1]);

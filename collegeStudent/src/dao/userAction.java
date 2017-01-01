@@ -1,7 +1,12 @@
 package dao;
 
+import DBOperation.DBOperation;
 import DBconnect.DBconnect;
-import bean.User;
+import Entity.UserEntity;
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import util.HibernateUtil;
+
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -13,63 +18,36 @@ import java.sql.SQLException;
  */
 public class userAction {
     //登陆
-    public static boolean login(User u){
-        Connection conn=DBconnect.getConn();
-        String sql="select * from user where id=? and pwd=?";
+    public static boolean login(UserEntity u){
+        Session session=null;
         boolean flag=false;
         try{
-            PreparedStatement ps=conn.prepareStatement(sql);
-
-            ps.setString(1,u.getId());
-            ps.setString(2,u.getPwd());
-
-            ResultSet rs=ps.executeQuery();
-            flag=rs.next();
-            u.setName(rs.getString("name"));
-            u.setEmail(rs.getString("email"));
-            u.setMajor(rs.getString("major"));
-            u.setGender(rs.getString("gender"));
-            u.setGrade(rs.getString("grade"));
-            u.setAge(rs.getString("age"));
-            u.setUniversity(rs.getString("university"));
-            u.setCollege(rs.getString("college"));
-
-            DBconnect.closeConn(conn,ps,rs);
-        }catch (SQLException e){
-            e.printStackTrace();
+            session= HibernateUtil.getSession();
+            UserEntity userEntity=(UserEntity)session.get(UserEntity.class,u.getId());
+            if(userEntity!=null){
+                flag=true;
+                u.setId(userEntity.getId());
+                u.setName(userEntity.getName());
+                u.setPwd(userEntity.getPwd());
+                u.setUniversity(userEntity.getUniversity());
+                u.setCollege(userEntity.getCollege());
+                u.setMajor(userEntity.getMajor());
+                u.setGrade(userEntity.getGrade());
+                u.setGender(userEntity.getGender());
+                u.setEmail(userEntity.getEmail());
+                u.setAge(userEntity.getAge());
+            }
+        }catch (HibernateException he){
+            session.getTransaction().rollback();
+            System.err.printf("login failed");
+            he.printStackTrace();
+        }finally {
+            HibernateUtil.closeSession();
+            return flag;
         }
-
-        return flag;
     }
     //注册
-    public static boolean register(User u){
-        Connection conn=DBconnect.getConn();
-        String sql="insert into user(id,name,pwd,university,college,major,grade,gender,age,email) values(?,?,?,?,?,?,?,?,?,?)";
-        int judge=0;
-        try{
-            PreparedStatement ps=conn.prepareStatement(sql);
-
-            ps.setString(1,u.getId());
-            ps.setString(2,u.getName());
-            ps.setString(3,u.getPwd());
-            ps.setString(4,u.getUniversity());
-            ps.setString(5,u.getCollege());
-            ps.setString(6,u.getMajor());
-            ps.setString(7,u.getGrade());
-            ps.setString(8,u.getGender());
-            ps.setString(9,u.getAge());
-            ps.setString(10,u.getEmail());
-
-            judge=ps.executeUpdate();
-            DBconnect.closeConn(conn,ps);
-        }catch (SQLException e){
-            e.printStackTrace();
-        }
-
-        if(judge!=0){
-            return true;
-        }else {
-            return false;
-        }
+    public static boolean register(UserEntity u){
+        return DBOperation.add(u);
     }
 }

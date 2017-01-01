@@ -1,4 +1,4 @@
-<%@ page import="bean.User" %><%--
+<%@ page import="Entity.UserEntity" %><%--
   Created by IntelliJ IDEA.
   User: jay chen
   Date: 2016/9/16
@@ -61,7 +61,7 @@
 <!--登录窗口-->
 <div id ="signIn">
     <%
-        User u = (User) request.getSession().getAttribute("user");
+        UserEntity u = (UserEntity) request.getSession().getAttribute("user");
         String error = (String) request.getAttribute("error");
         String id = (String) request.getAttribute("id");
         if (u == null && error == null) {

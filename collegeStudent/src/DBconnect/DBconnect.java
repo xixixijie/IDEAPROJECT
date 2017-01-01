@@ -11,7 +11,7 @@ public class DBconnect {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             try {
-                connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/platform","root","00000000");
+                connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/platform","root","ODFjM2IwODB");
                 if (connection == null) {
                     System.out.println(1);
                 }
