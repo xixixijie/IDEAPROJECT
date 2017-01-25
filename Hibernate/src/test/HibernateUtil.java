@@ -13,13 +13,7 @@ public class HibernateUtil {
     private static SessionFactory sessionFactory=null;
 
     static {
-        try{
-            Configuration cfg=new Configuration().configure();
-            sessionFactory=cfg.buildSessionFactory();
-        }catch (Exception e){
-            System.out.printf("创建会话工厂失败");
-            e.printStackTrace();
-        }
+        rebuildSessionFactory();
     }
 
     public static Session getSession() throws HibernateException{

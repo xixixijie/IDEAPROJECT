@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="test.Product" table="product" schema="test">
+        <id name="id" column="id"/>
+        <property name="name" column="name"/>
+        <property name="price" column="price"/>
+        <!-- cascade 是否执行级联操作
+        none：不执行
+        all：所有情况下执行
+        save—update 保存和更新的时候执行
+        delete 删除时执行-->
+        <many-to-one cascade="none" name="factoryByFactoryId" class="test.Factory">
+            <column name="factoryId"/>
+        </many-to-one>
+    </class>
+</hibernate-mapping>

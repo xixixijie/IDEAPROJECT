@@ -1,8 +1,5 @@
 import org.hibernate.Session;
 import test.HibernateUtil;
-import test.ProductEntity;
-
-import java.util.Date;
 
 /**
  * Created by xixi on 14/12/2016.
@@ -58,12 +55,20 @@ public class Test {
 //            e.printStackTrace();
 
 
+////        }
+//
+//        //数据删
+//        Session session=null;
+//        try{
+//            session=HibernateUtil.getSession();
+//            ProductEntity product=(ProductEntity)session.get(ProductEntity.class,1);
+//            session.delete(product);
+//            session.flush();
+//        }catch (Exception e){
+//            System.err.println("failed");
+//        }finally {
+//            HibernateUtil.closeSession();
 //        }
-
-        //数据删
-        Session session=null;
-        Date date=new Date("yy-mm-dddd");
-        System.out.printf(date+"");
 
     }
 }
