@@ -2,7 +2,7 @@ package servlet;
 
 import DAO.ProDao;
 import bean.Product;
-import org.apache.catalina.core.ApplicationPart;
+import  org.apache.catalina.core.ApplicationPart;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
@@ -31,7 +31,7 @@ public class AddProServlet extends HttpServlet {
 
 
         ApplicationPart ap = (ApplicationPart) p;
-        String fname1 = ap.getSubmittedFileName(); //获取上传文件名
+        String fname1 = ap.getName(); //获取上传文件名
         int path_idx = fname1.lastIndexOf(" ") + 1;        //对上传文件名进行截取
         String fname2 = fname1.substring(path_idx, fname1.length());
         proimage = path + "upload\\" + fname2;

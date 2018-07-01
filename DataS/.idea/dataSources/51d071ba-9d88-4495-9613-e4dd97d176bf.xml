@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="DataS@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="dataS">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="jsp"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <schema id="7" parent="1" name="platform"/>
+    <schema id="8" parent="1" name="sys"/>
+    <schema id="9" parent="1" name="test"/>
+    <schema id="10" parent="1" name="test1"/>
+    <table id="11" parent="2" name="Admin"/>
+    <table id="12" parent="2" name="Record"/>
+    <column id="13" parent="11" name="id">
+      <Position>1</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="14" parent="11" name="pswd">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <key id="15" parent="11" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="16" parent="12" name="inTime">
+      <Position>2</Position>
+      <DataType>timestamp(6)|0</DataType>
+    </column>
+    <column id="17" parent="12" name="outTime">
+      <Position>3</Position>
+      <DataType>timestamp(6)|0</DataType>
+    </column>
+    <column id="18" parent="12" name="money">
+      <Position>4</Position>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="19" parent="12" name="carId">
+      <Position>1</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="20" parent="12" name="recordID">
+      <Position>5</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="21" parent="12" name="PRIMARY">
+      <ColNames>recordID</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

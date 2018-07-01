@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="@113.225.216.68" uuid="9f2fa891-69a9-4185-9eef-a982d02b1539">
+      <database-info product="Oracle" version="Oracle Database 10g Enterprise Edition Release 10.2.0.1.0 - Production&#10;With the Partitioning, OLAP and Data Mining options" jdbc-version="4.0" driver-name="Oracle JDBC driver" driver-version="12.1.0.2.0">
+        <extra-name-characters>$#</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>scott</user-name>
+      <resolve-scope>*:PUBLIC,SCOTT</resolve-scope>
+    </data-source>
+    <data-source name="hibernate.cfg.xml/Hibernate driver - @localhost [2]" uuid="692e3443-c18a-429f-8c9d-2b90e5398487">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <secret-storage>master_key</secret-storage>
+      <first-sync>true</first-sync>
+    </data-source>
+  </component>
+</project>

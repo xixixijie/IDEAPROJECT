@@ -1,0 +1,41 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="block1:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/block1_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="block1/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="block1" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="/Library/Tomcat7/lib/el-api.jar" />
+          <element id="file-copy" path="/Library/Tomcat7/lib/jasper.jar" />
+          <element id="file-copy" path="/Library/Tomcat7/lib/jsp-api.jar" />
+          <element id="file-copy" path="/Library/Tomcat7/lib/catalina.jar" />
+          <element id="file-copy" path="/Library/Tomcat7/lib/ecj-4.4.2.jar" />
+          <element id="file-copy" path="/Library/Tomcat7/lib/jasper-el.jar" />
+          <element id="file-copy" path="/Library/Tomcat7/lib/tomcat-api.jar" />
+          <element id="file-copy" path="/Library/Tomcat7/lib/catalina-ha.jar" />
+          <element id="file-copy" path="/Library/Tomcat7/lib/servlet-api.jar" />
+          <element id="file-copy" path="/Library/Tomcat7/lib/tomcat-dbcp.jar" />
+          <element id="file-copy" path="/Library/Tomcat7/lib/tomcat-jdbc.jar" />
+          <element id="file-copy" path="/Library/Tomcat7/lib/tomcat-util.jar" />
+          <element id="file-copy" path="/Library/Tomcat7/lib/catalina-ant.jar" />
+          <element id="file-copy" path="/Library/Tomcat7/lib/tomcat-coyote.jar" />
+          <element id="file-copy" path="/Library/Tomcat7/lib/websocket-api.jar" />
+          <element id="file-copy" path="/Library/Tomcat7/lib/tomcat-i18n-es.jar" />
+          <element id="file-copy" path="/Library/Tomcat7/lib/tomcat-i18n-fr.jar" />
+          <element id="file-copy" path="/Library/Tomcat7/lib/tomcat-i18n-ja.jar" />
+          <element id="file-copy" path="/Library/Tomcat7/lib/annotations-api.jar" />
+          <element id="file-copy" path="/Library/Tomcat7/lib/catalina-tribes.jar" />
+          <element id="file-copy" path="/Library/Tomcat7/lib/tomcat7-websocket.jar" />
+          <element id="file-copy" path="/Library/Tomcat7/lib/javax.websocket-api-1.0-sources.jar" />
+          <element id="file-copy" path="/Library/Tomcat7/lib/mysql-connector-java-5.1.18-bin.jar" />
+          <element id="file-copy" path="$USER_HOME$/Desktop/ojdbc14.jar" />
+          <element id="file-copy" path="$USER_HOME$/Desktop/jstl-1.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/Desktop/jxl.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

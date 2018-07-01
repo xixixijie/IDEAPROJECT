@@ -41,6 +41,7 @@ public class ProDao {
     public static List<Product> find(int page) {
         List<Product> list = new ArrayList<>();
         Connection conn = DBconnect.getConn();
+        //第一个参数是页数，从0开始，第二个参数是每页大小
         String sql = "select * from product order by proid asc limit ?,?";
         try {
             PreparedStatement ps = conn.prepareStatement(sql);

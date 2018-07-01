@@ -16,7 +16,7 @@
       </driver-properties>
     </data-source>
     <data-source source="LOCAL" name="hibernate.cfg.xml/Hibernate" uuid="54737c9a-f052-4a76-9902-38af83fd4bcb">
-      <driver-ref>mysql</driver-ref>
+      <driver-ref>6cb4a884-a0fa-4bab-8300-96d99c159494</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
       <remarks>$PROJECT_DIR$/src/hibernate.cfg.xml</remarks>
@@ -31,6 +31,12 @@
         <property name="yearIsDateType" value="false" />
       </driver-properties>
       <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/MySQL Connector/J/5.1.40/mysql-connector-license.txt</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/MySQL Connector/J/5.1.40/mysql-connector-java-5.1.40-bin.jar</url>
+        </library>
         <library>
           <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/mysql-connector-license.txt</url>
         </library>
