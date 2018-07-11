@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration> 
+    
+
+	 <typeAliases>
+	     <!-- 
+	     type:要设定别名的类的全类名
+	     alias：别名
+	      -->
+		 <package name="com.ssm.model.bean"/>
+	     <!--<typeAlias type="com.mybatis.bean.UserInfo" alias="UserInfo"  />-->
+	 </typeAliases>
+	 
+
+	 
+</configuration>  
+
+
+
+
+

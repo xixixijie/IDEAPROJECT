@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.2.xsd
+            http://www.springframework.org/schema/mvc
+            http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+            http://www.springframework.org/schema/util
+            http://www.springframework.org/schema/util/spring-util-3.2.xsd">
+    <!--配置映射器
+    BeanNameUrlHandlerMapping：按照名字匹配 默认
+    SimpleUrlHandlerMapping:同一个控制器对应多个路径
+    -->
+    <!--<bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" />-->
+    <!--<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping" >-->
+        <!--<property name="mappings">-->
+            <!--<props>-->
+                <!--<prop key="Login.action">Login</prop>-->
+            <!--</props>-->
+        <!--</property>-->
+    <!--</bean>-->
+
+    <!--处理器适配器
+    SimpleControllerHandlerAdapter:实现Controller接口
+    HttpRequestHandlerAdapter:要求实现HttpRequestHandlerAdapter接口
+    -->
+    <!--<bean class="org.springframework.web.servlet.handler.Si"></bean>-->
+
+
+
+   <mvc:annotation-driven></mvc:annotation-driven>
+    <!--响应-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+    <!--控制器类的对象管理-->
+    <!--<bean id="Login" name="/Login.action" class="Controller.LoginController"></bean>-->
+
+
+    <!--组件扫描管理所有控制器-->
+    <!--<context:component-scan base-package="Controller"></context:component-scan>-->
+</beans>

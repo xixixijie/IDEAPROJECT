@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans.xsd				
+						http://www.springframework.org/schema/context 
+						http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!--
+		bean元素
+		id属性：唯一标识
+		name：唯一标识
+		多个id是同一个类
+		多个name对应不同对象
+				class：对应类的全类名
+		scope：设定bean对象的作用域 默认 singleton 默认单例  prototype
+		lazy-init:设定bean元素是否延迟初始化，
+		true延迟：在getbean方法调用时才生成对象
+		false不延迟：在容器加载过程中生成对象
+	-->
+
+
+	<bean id="first" class="bean.FirstBean" scope="prototype"></bean>
+	<bean id="second" class="bean.SecondBean"></bean>
+
+	<bean id="example" class="bean.ExampleBean">
+		<!--构造柱入 bean:属性的值是已有bean的id-->
+		<constructor-arg>
+			<ref bean="first"></ref>
+		</constructor-arg>
+		<constructor-arg>
+			<ref bean="second"></ref>
+		</constructor-arg>
+	</bean>
+
+	<bean id="newExample" class="bean.newExampleBean">
+		<!--Setter注入
+			name:属性名
+			ref:bean id
+			类中提供setter方法
+
+		-->
+		<property name="firstBean" ref="first"/>
+		<property name="secondBean" ref="second"/>
+
+
+	</bean>
+
+	<bean id="student" class="bean.Student">
+		<property name="sid" value="101"/>
+		<!--<property name="sname" value="Lucy"/>-->
+		<property name="sname"><null></null></property>
+		<property name="age" value="21"/>
+		<property name="cla" ref="cla"/>
+	</bean>
+
+	<bean id="cla" class="bean.Classes">
+	<property name="cid" value="100"/>
+		<property name="cname" value="Java班"/>
+	</bean>
+</beans>

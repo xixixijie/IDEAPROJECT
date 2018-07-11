@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+      http://www.springframework.org/schema/beans/spring-beans.xsd
+      http://www.springframework.org/schema/context
+      http://www.springframework.org/schema/context/spring-context.xsd
+      http://www.springframework.org/schema/tx
+      http://www.springframework.org/schema/tx/spring-tx.xsd
+      http://www.springframework.org/schema/aop
+      http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--加载db  location：指定要加载的文件的位置-->
+    <context:property-placeholder location="classpath:db.properties" />
+
+    <!--配置数据源-->
+    <bean id="datasource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="${dbdriver}" />
+        <property name="url" value="${dburl}"/>
+        <property name="username" value="${username}"/>
+        <property name="password" value="${password}"/>
+        <property name="maxActive" value="30"/>
+        <property name="maxIdle" value="5"/>
+    </bean>
+
+    <!--配置数据库连接池-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="datasource"/>
+        <!--加载mybatis的全局配置文件-->
+        <property name="configLocation " value="classpath:SqlMapConfig.xml"/>
+    </bean>
+
+    <!--管理所有sql映射文件 mapper扫描-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!--组建扫描所有mapper-->
+        <property name="basePackage" value="com.ssm.model.dao"/>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+    </bean>
+
+
+
+
+</beans>

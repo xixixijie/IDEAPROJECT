@@ -16,5 +16,15 @@
       <secret-storage>master_key</secret-storage>
       <first-sync>true</first-sync>
     </data-source>
+    <data-source name="@10.25.49.52" uuid="a175cf73-ffff-4c57-ae12-5d0433b13ba5">
+      <database-info product="Oracle" version="Oracle Database 10g Enterprise Edition Release 10.2.0.1.0 - Production&#10;With the Partitioning, OLAP and Data Mining options" jdbc-version="4.0" driver-name="Oracle JDBC driver" driver-version="12.1.0.2.0">
+        <extra-name-characters>$#</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>scott</user-name>
+      <resolve-scope>*:PUBLIC,SCOTT</resolve-scope>
+    </data-source>
   </component>
 </project>

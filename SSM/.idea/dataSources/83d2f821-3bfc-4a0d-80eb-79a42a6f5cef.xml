@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@10.25.49.56">
+  <database-model serializer="dbm" rdbms="ORACLE" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="SCOTT">
+      <ObjectId>54</ObjectId>
+      <IntrospectionTimestamp>2018-07-11.11:06:05</IntrospectionTimestamp>
+      <CreatedTimestamp>2005-08-30.15:06:10</CreatedTimestamp>
+      <ModifiedTimestamp>2018-07-04.09:26:25</ModifiedTimestamp>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="PUBLIC">
+      <ObjectId>1</ObjectId>
+    </schema>
+    <schema id="4" parent="1" name="SYS">
+      <ObjectId>0</ObjectId>
+    </schema>
+    <schema id="5" parent="1" name="SYSTEM">
+      <ObjectId>5</ObjectId>
+    </schema>
+    <schema id="6" parent="1" name="OUTLN">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="7" parent="1" name="DIP">
+      <ObjectId>19</ObjectId>
+    </schema>
+    <schema id="8" parent="1" name="TSMSYS">
+      <ObjectId>21</ObjectId>
+    </schema>
+    <schema id="9" parent="1" name="DBSNMP">
+      <ObjectId>24</ObjectId>
+    </schema>
+    <schema id="10" parent="1" name="WMSYS">
+      <ObjectId>25</ObjectId>
+    </schema>
+    <schema id="11" parent="1" name="EXFSYS">
+      <ObjectId>34</ObjectId>
+    </schema>
+    <schema id="12" parent="1" name="DMSYS">
+      <ObjectId>35</ObjectId>
+    </schema>
+    <schema id="13" parent="1" name="CTXSYS">
+      <ObjectId>36</ObjectId>
+    </schema>
+    <schema id="14" parent="1" name="XDB">
+      <ObjectId>38</ObjectId>
+    </schema>
+    <schema id="15" parent="1" name="ANONYMOUS">
+      <ObjectId>39</ObjectId>
+    </schema>
+    <schema id="16" parent="1" name="ORDSYS">
+      <ObjectId>43</ObjectId>
+    </schema>
+    <schema id="17" parent="1" name="ORDPLUGINS">
+      <ObjectId>44</ObjectId>
+    </schema>
+    <schema id="18" parent="1" name="SI_INFORMTN_SCHEMA">
+      <ObjectId>45</ObjectId>
+    </schema>
+    <schema id="19" parent="1" name="MDSYS">
+      <ObjectId>46</ObjectId>
+    </schema>
+    <schema id="20" parent="1" name="OLAPSYS">
+      <ObjectId>47</ObjectId>
+    </schema>
+    <schema id="21" parent="1" name="MDDATA">
+      <ObjectId>50</ObjectId>
+    </schema>
+    <schema id="22" parent="1" name="SYSMAN">
+      <ObjectId>51</ObjectId>
+    </schema>
+    <schema id="23" parent="1" name="MGMT_VIEW">
+      <ObjectId>53</ObjectId>
+    </schema>
+    <sequence id="24" parent="2" name="SEQ_USERINFO">
+      <ObjectId>51356</ObjectId>
+      <CreatedTimestamp>2018-06-05.09:47:57</CreatedTimestamp>
+      <ModifiedTimestamp>2018-06-05.09:47:57</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>-2147483648</CacheSize>
+    </sequence>
+    <table id="25" parent="2" name="BONUS">
+      <ObjectId>51153</ObjectId>
+      <CreatedTimestamp>2005-08-30.15:06:10</CreatedTimestamp>
+      <ModifiedTimestamp>2005-08-30.15:06:10</ModifiedTimestamp>
+    </table>
+    <table id="26" parent="2" name="DEPARTMENT">
+      <ObjectId>51709</ObjectId>
+      <CreatedTimestamp>2018-07-03.10:45:23</CreatedTimestamp>
+      <ModifiedTimestamp>2018-07-03.10:45:24</ModifiedTimestamp>
+    </table>
+    <table id="27" parent="2" name="DEPT">
+      <ObjectId>51149</ObjectId>
+      <CreatedTimestamp>2005-08-30.15:06:10</CreatedTimestamp>
+      <ModifiedTimestamp>2005-08-30.15:06:10</ModifiedTimestamp>
+    </table>
+    <table id="28" parent="2" name="EMP">
+      <ObjectId>51151</ObjectId>
+      <CreatedTimestamp>2005-08-30.15:06:10</CreatedTimestamp>
+      <ModifiedTimestamp>2005-08-30.15:06:10</ModifiedTimestamp>
+    </table>
+    <table id="29" parent="2" name="EMPLOYEE">
+      <ObjectId>51706</ObjectId>
+      <CreatedTimestamp>2018-07-03.10:42:53</CreatedTimestamp>
+      <ModifiedTimestamp>2018-07-03.10:47:03</ModifiedTimestamp>
+    </table>
+    <table id="30" parent="2" name="SALGRADE">
+      <ObjectId>51154</ObjectId>
+      <CreatedTimestamp>2005-08-30.15:06:10</CreatedTimestamp>
+      <ModifiedTimestamp>2005-08-30.15:06:10</ModifiedTimestamp>
+    </table>
+    <table id="31" parent="2" name="USERINFO">
+      <ObjectId>51346</ObjectId>
+      <CreatedTimestamp>2018-06-04.15:06:44</CreatedTimestamp>
+      <ModifiedTimestamp>2018-07-04.09:26:25</ModifiedTimestamp>
+    </table>
+    <column id="32" parent="25" name="ENAME">
+      <Position>1</Position>
+      <DataType>VARCHAR2(10)|0</DataType>
+    </column>
+    <column id="33" parent="25" name="JOB">
+      <Position>2</Position>
+      <DataType>VARCHAR2(9)|0</DataType>
+    </column>
+    <column id="34" parent="25" name="SAL">
+      <Position>3</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="35" parent="25" name="COMM">
+      <Position>4</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="36" parent="26" name="DID">
+      <Position>1</Position>
+      <DataType>NUMBER(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="37" parent="26" name="DNO">
+      <Position>2</Position>
+      <DataType>VARCHAR2(10)|0</DataType>
+    </column>
+    <column id="38" parent="26" name="DNAME">
+      <Position>3</Position>
+      <DataType>VARCHAR2(30)|0</DataType>
+    </column>
+    <index id="39" parent="26" name="PK_DEPARTMENT">
+      <ObjectId>51710</ObjectId>
+      <CreatedTimestamp>2018-07-03.10:45:24</CreatedTimestamp>
+      <ModifiedTimestamp>2018-07-03.10:45:24</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>DID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="40" parent="26" name="PK_DEPARTMENT">
+      <ModifiedTimestamp>2018-07-03.10:45:24</ModifiedTimestamp>
+      <ColNames>DID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_DEPARTMENT</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="41" parent="27" name="DEPTNO">
+      <Position>1</Position>
+      <DataType>NUMBER(2)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="42" parent="27" name="DNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(14)|0</DataType>
+    </column>
+    <column id="43" parent="27" name="LOC">
+      <Position>3</Position>
+      <DataType>VARCHAR2(13)|0</DataType>
+    </column>
+    <index id="44" parent="27" name="PK_DEPT">
+      <ObjectId>51150</ObjectId>
+      <CreatedTimestamp>2005-08-30.15:06:10</CreatedTimestamp>
+      <ModifiedTimestamp>2005-08-30.15:06:10</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>DEPTNO</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="45" parent="27" name="PK_DEPT">
+      <ModifiedTimestamp>2005-08-30.15:06:10</ModifiedTimestamp>
+      <ColNames>DEPTNO</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_DEPT</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="46" parent="28" name="EMPNO">
+      <Position>1</Position>
+      <DataType>NUMBER(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="28" name="ENAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(10)|0</DataType>
+    </column>
+    <column id="48" parent="28" name="JOB">
+      <Position>3</Position>
+      <DataType>VARCHAR2(9)|0</DataType>
+    </column>
+    <column id="49" parent="28" name="MGR">
+      <Position>4</Position>
+      <DataType>NUMBER(4)|0</DataType>
+    </column>
+    <column id="50" parent="28" name="HIREDATE">
+      <Position>5</Position>
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="51" parent="28" name="SAL">
+      <Position>6</Position>
+      <DataType>NUMBER(7,2)|0</DataType>
+    </column>
+    <column id="52" parent="28" name="COMM">
+      <Position>7</Position>
+      <DataType>NUMBER(7,2)|0</DataType>
+    </column>
+    <column id="53" parent="28" name="DEPTNO">
+      <Position>8</Position>
+      <DataType>NUMBER(2)|0</DataType>
+    </column>
+    <index id="54" parent="28" name="PK_EMP">
+      <ObjectId>51152</ObjectId>
+      <CreatedTimestamp>2005-08-30.15:06:10</CreatedTimestamp>
+      <ModifiedTimestamp>2005-08-30.15:06:10</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>EMPNO</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="55" parent="28" name="PK_EMP">
+      <ModifiedTimestamp>2005-08-30.15:06:10</ModifiedTimestamp>
+      <ColNames>EMPNO</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_EMP</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="56" parent="28" name="FK_DEPTNO">
+      <ModifiedTimestamp>2005-08-30.15:06:10</ModifiedTimestamp>
+      <ColNames>DEPTNO</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>DEPT</RefTableName>
+      <RefKeyName>PK_DEPT</RefKeyName>
+    </foreign-key>
+    <column id="57" parent="29" name="EID">
+      <Position>1</Position>
+      <DataType>NUMBER(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="58" parent="29" name="ENO">
+      <Position>2</Position>
+      <DataType>VARCHAR2(10)|0</DataType>
+    </column>
+    <column id="59" parent="29" name="ENAME">
+      <Position>3</Position>
+      <DataType>VARCHAR2(20)|0</DataType>
+    </column>
+    <column id="60" parent="29" name="DEPTID">
+      <Position>4</Position>
+      <DataType>NUMBER(4)|0</DataType>
+    </column>
+    <index id="61" parent="29" name="PK_EMPLOYEE">
+      <ObjectId>51708</ObjectId>
+      <CreatedTimestamp>2018-07-03.10:44:08</CreatedTimestamp>
+      <ModifiedTimestamp>2018-07-03.10:44:08</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>EID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="62" parent="29" name="PK_EMPLOYEE">
+      <ModifiedTimestamp>2018-07-03.10:44:08</ModifiedTimestamp>
+      <ColNames>EID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_EMPLOYEE</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="63" parent="29" name="FK_EMPLOYEE_REF_DEPARTMENT">
+      <ModifiedTimestamp>2018-07-03.10:47:03</ModifiedTimestamp>
+      <ColNames>DEPTID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>DEPARTMENT</RefTableName>
+      <RefKeyName>PK_DEPARTMENT</RefKeyName>
+    </foreign-key>
+    <column id="64" parent="30" name="GRADE">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="65" parent="30" name="LOSAL">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="66" parent="30" name="HISAL">
+      <Position>3</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="67" parent="31" name="ID">
+      <Position>1</Position>
+      <DataType>NUMBER(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="68" parent="31" name="USERNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(30)|0</DataType>
+    </column>
+    <column id="69" parent="31" name="PASSWORD">
+      <Position>3</Position>
+      <DataType>VARCHAR2(30)|0</DataType>
+    </column>
+    <column id="70" parent="31" name="AGE">
+      <Position>4</Position>
+      <DataType>NUMBER(4)|0</DataType>
+    </column>
+    <column id="71" parent="31" name="TELEPHONE">
+      <Position>5</Position>
+      <DataType>VARCHAR2(30)|0</DataType>
+    </column>
+    <column id="72" parent="31" name="EMAILS">
+      <Position>6</Position>
+      <DataType>VARCHAR2(30)|0</DataType>
+    </column>
+    <column id="73" parent="31" name="PHOTOURL">
+      <Position>7</Position>
+      <DataType>VARCHAR2(30)|0</DataType>
+    </column>
+    <index id="74" parent="31" name="PK_USER">
+      <ObjectId>51347</ObjectId>
+      <CreatedTimestamp>2018-06-04.15:06:45</CreatedTimestamp>
+      <ModifiedTimestamp>2018-06-04.15:06:45</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="75" parent="31" name="PK_USER">
+      <ModifiedTimestamp>2018-06-04.15:06:45</ModifiedTimestamp>
+      <ColNames>ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_USER</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
